@@ -1,0 +1,12 @@
+.login-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+.form-login {
+  margin: auto;
+  width: 60%;
+  padding: 5%;
+  border-radius: 16px;
+}

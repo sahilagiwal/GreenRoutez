@@ -26,7 +26,7 @@ const HomePage = () => {
         <h1 className="heading">
           <i className="fab fa-react fa-5x" id="react-logo" />
           <Typed
-            strings={["SAVE", "", "RIDE"]}
+            strings={["SAVE", "EARN", "RIDE"]}
             typeSpeed={300}
             backSpeed={100}
             loop

@@ -1,0 +1,52 @@
+.fqa-head{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: large;
+}
+
+.fqa{
+    position: relative;
+    background: rgb(187, 187, 187);
+    height: 50px;
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    padding-top: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.active, .fqa:hover {
+    background-color: #ccc;
+}
+
+.panel-hide {
+    padding: 0;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.sign{
+    display: inline;
+    float: right;
+    padding-right: 20px;
+}
+
+
+.panel-show {
+    position: relative;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    width: 75%;
+    height: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+}
+
+
+

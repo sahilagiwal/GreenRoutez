@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/greenroutez/static/css/main.53021d7a.css",
+    "main.js": "/greenroutez/static/js/main.b766fcbb.js",
+    "static/js/787.ca72abbd.chunk.js": "/greenroutez/static/js/787.ca72abbd.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/greenroutez/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/greenroutez/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
+    "static/media/logo.png": "/greenroutez/static/media/logo.c94a48df4a8229aab3f3.png",
+    "static/media/money.svg": "/greenroutez/static/media/money.5faeb943757d1462b06b78cce2d2c19f.svg",
+    "static/media/car.svg": "/greenroutez/static/media/car.7ee7568143874e362bdf43d4b7920dc6.svg",
+    "static/media/map.svg": "/greenroutez/static/media/map.e9eec92a45666f31c2b2dc6107d72bfa.svg",
+    "index.html": "/greenroutez/index.html",
+    "main.53021d7a.css.map": "/greenroutez/static/css/main.53021d7a.css.map",
+    "main.b766fcbb.js.map": "/greenroutez/static/js/main.b766fcbb.js.map",
+    "787.ca72abbd.chunk.js.map": "/greenroutez/static/js/787.ca72abbd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53021d7a.css",
+    "static/js/main.b766fcbb.js"
+  ]
+}

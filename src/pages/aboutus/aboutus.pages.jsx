@@ -1,4 +1,6 @@
 import React from "react";
+import AboutUsCard from "../../components/aboutuscards/aboutuscard.component";
+import "../../pages/aboutus/aboutus.styles.css"; 
 import { motion } from "framer-motion";
 
 const AboutUs = () => {

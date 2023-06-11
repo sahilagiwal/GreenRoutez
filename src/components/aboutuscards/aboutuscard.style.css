@@ -16,5 +16,5 @@
     }
     
     .card.shadow-sm {
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Adjust the rgba color and other values as needed */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 5); /* Adjust the rgba color and other values as needed */
     }

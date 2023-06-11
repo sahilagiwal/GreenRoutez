@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 const AboutUs = () => {
   return (
+    <>
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -10,6 +11,15 @@ const AboutUs = () => {
     >
       <h1>AboutUs</h1>
     </motion.div>
+    <div className="card-section">
+    <AboutUsCard />
+    <AboutUsCard />
+    <AboutUsCard />
+    <AboutUsCard />
+    <AboutUsCard />
+    <AboutUsCard />
+  </div>
+  </>
   );
 };
 

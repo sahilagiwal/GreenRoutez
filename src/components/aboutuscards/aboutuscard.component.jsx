@@ -9,7 +9,7 @@ export default function AboutUsCard(props) {
     <div className="card-section">
   <div className="card-size">
     <div className="card shadow-sm">
-     <img className="bd-placeholder-img card-img-top" width="100px" height="200px" src="https://www.al.com/resizer/KsZaj46Thx9ARTCiYaMEfX6kHiw=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/NSDL77J3KJFZXCK3MFWAV7HMUE.JPG" alt="Card image cap"/> 
+     <img className="bd-placeholder-img card-img-top" width="100px" height="200px" src="https://www.al.com/resizer/KsZaj46Thx9ARTCiYaMEfX6kHiw=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/NSDL77J3KJFZXCK3MFWAV7HMUE.JPG" alt="Cardcap"/> 
       <div className="card-body">
       <p className="card-text">
       <tr>{props.name}</tr>

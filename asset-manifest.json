@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GreenRoutez/static/css/main.e617dd31.css",
-    "main.js": "/GreenRoutez/static/js/main.6055772f.js",
+    "main.js": "/GreenRoutez/static/js/main.de68cfdd.js",
     "static/js/787.ca72abbd.chunk.js": "/GreenRoutez/static/js/787.ca72abbd.chunk.js",
     "static/media/bootstrap-icons.woff?": "/GreenRoutez/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
     "static/media/bootstrap-icons.woff2?": "/GreenRoutez/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
@@ -11,11 +11,11 @@
     "static/media/map.svg": "/GreenRoutez/static/media/map.e9eec92a45666f31c2b2dc6107d72bfa.svg",
     "index.html": "/GreenRoutez/index.html",
     "main.e617dd31.css.map": "/GreenRoutez/static/css/main.e617dd31.css.map",
-    "main.6055772f.js.map": "/GreenRoutez/static/js/main.6055772f.js.map",
+    "main.de68cfdd.js.map": "/GreenRoutez/static/js/main.de68cfdd.js.map",
     "787.ca72abbd.chunk.js.map": "/GreenRoutez/static/js/787.ca72abbd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e617dd31.css",
-    "static/js/main.6055772f.js"
+    "static/js/main.de68cfdd.js"
   ]
 }

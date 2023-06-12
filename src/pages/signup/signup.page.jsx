@@ -6,8 +6,10 @@ import Container from "react-bootstrap/Container";
 import Key from "react-bootstrap-icons/dist/icons/key";
 import Envelope from "react-bootstrap-icons/dist/icons/envelope";
 import InputGroup from "react-bootstrap/InputGroup";
+import Person from "react-bootstrap-icons/dist/icons/person";
 import { motion } from "framer-motion";
 import "./signup.styles.css";
+import axios from "axios";
 
 const SignUp = () => {
   const [isDriver, setIsDriver] = useState(false);
@@ -16,34 +18,27 @@ const SignUp = () => {
     setIsDriver(event.target.checked);
   };
 
-  const DriverDetail = () => {
-    return (
-      <div>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Car Vin Number</Form.Label>
+  const [username, Setusername] = useState("");
+  const [email, Setemail] = useState("");
+  const [password, Setpassword] = useState("");
+  const [vin, Setvin] = useState("");
 
-          <Form.Control type="text" placeholder="4Y1SL65848Z411439" required />
-          <Form.Text className="text-muted">
-            We need this to calculate your cars gas milage and
-          </Form.Text>
-        </Form.Group>
-
-        <Form.Group controlId="formFile" className="mb-3">
-          <Form.Label>Car Insurance</Form.Label>
-          <Form.Control type="file" required />
-        </Form.Group>
-        <Form.Group controlId="formFile" className="mb-3">
-          <Form.Label>Car Registration</Form.Label>
-          <Form.Control type="file" required />
-        </Form.Group>
-
-        <Form.Group controlId="formFile" className="mb-3">
-          <Form.Label>Profile Picture</Form.Label>
-          <Form.Control type="file" required />
-        </Form.Group>
-      </div>
-    );
+  const handleSubmission = (e) => {
+    e.preventDefault();
+    const sendDataUrl = "http://localhost/greenroutez/signup.php";
+    let formdata = new FormData();
+    formdata.append("name", username);
+    formdata.append("email", email + "@juniata.edu");
+    formdata.append("password", password);
+    if (isDriver) {
+      formdata.append("vin", vin);
+    }
+    axios
+      .post(sendDataUrl, formdata)
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error));
   };
+
   return (
     <motion.div
       className="signup-section"
@@ -53,12 +48,30 @@ const SignUp = () => {
     >
       <Container>
         <Form className="form-signup shadow-lg">
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Label>
+              Name <Person />
+            </Form.Label>
+            <Form.Control
+              value={username}
+              onChange={(e) => {
+                Setusername(e.target.value);
+              }}
+              type="text"
+              placeholder="Sahil"
+              required
+            />
+          </Form.Group>
           <Form.Group className="mb-3">
             <Form.Label>
               Juniata Email <Envelope />
             </Form.Label>
             <InputGroup className="mb-3">
               <Form.Control
+                value={email}
+                onChange={(e) => {
+                  Setemail(e.target.value);
+                }}
                 placeholder="agiwasx21"
                 aria-label="email"
                 aria-describedby="basic-addon2"
@@ -72,10 +85,45 @@ const SignUp = () => {
             <Form.Label>
               Password <Key />
             </Form.Label>
-            <Form.Control type="password" placeholder="Password" required />
+            <Form.Control
+              value={password}
+              onChange={(e) => {
+                Setpassword(e.target.value);
+              }}
+              type="password"
+              placeholder="Password"
+              required
+            />
           </Form.Group>
 
-          {isDriver ? <DriverDetail /> : null}
+          {isDriver ? (
+            <div>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Car Vin Number</Form.Label>
+
+                <Form.Control
+                  value={vin}
+                  onChange={(e) => {
+                    Setvin(e.target.value);
+                  }}
+                  placeholder="4Y1SL65848Z411439"
+                  required
+                />
+                <Form.Text className="text-muted">
+                  We need this to calculate your cars gas milage and
+                </Form.Text>
+              </Form.Group>
+
+              <Form.Group controlId="formFile" className="mb-3">
+                <Form.Label>Car Insurance</Form.Label>
+                <Form.Control type="file" required />
+              </Form.Group>
+              <Form.Group controlId="formFile" className="mb-3">
+                <Form.Label>Car Registration</Form.Label>
+                <Form.Control type="file" required />
+              </Form.Group>
+            </div>
+          ) : null}
 
           <Form.Check
             onChange={checkedDriver}
@@ -84,7 +132,12 @@ const SignUp = () => {
             label="Join as a Driver and Rider (Will have some extra steps)"
           />
 
-          <Button className="mt-3" variant="dark" type="submit">
+          <Button
+            onClick={handleSubmission}
+            className="mt-3"
+            variant="dark"
+            type="submit"
+          >
             Join Now
           </Button>
         </Form>

@@ -1,3 +1,15 @@
 .ride-card-wrapper h5 {
   font-family: "Oswald", sans-serif;
 }
+.location-img {
+  height: 130px;
+}
+@media all and (max-width: 500px) {
+  .location-img {
+    height: 100px;
+    padding-bottom: 10px;
+  }
+  .ridecard-col {
+    margin-bottom: 5px;
+  }
+}

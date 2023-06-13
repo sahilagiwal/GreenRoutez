@@ -111,7 +111,7 @@ const Rides = () => {
   ];
   return (
     <motion.div>
-      <InputGroup className="mb-5 mx-auto" style={{ width: "40%" }}>
+      <InputGroup className="mb-5 mx-auto" style={{ maxWidth: "80%" }}>
         <InputGroup.Text id="basic-addon1" className="btn btn-dark">
           <Search />
         </InputGroup.Text>

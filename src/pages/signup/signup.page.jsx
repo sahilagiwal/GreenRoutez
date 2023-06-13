@@ -22,6 +22,9 @@ const SignUp = () => {
   const [email, Setemail] = useState("");
   const [password, Setpassword] = useState("");
   const [vin, Setvin] = useState("");
+  const [insurance, SetInsurance] = useState(null);
+  const [carRegistration, SetcarRegistration] = useState(null);
+  const [dl, setDl] = useState(null);
 
   const handleSubmission = (e) => {
     e.preventDefault();
@@ -116,10 +119,21 @@ const SignUp = () => {
 
               <Form.Group controlId="formFile" className="mb-3">
                 <Form.Label>Car Insurance</Form.Label>
+                <Form.Control
+                  onChange={(e) => {
+                    SetInsurance(e.target.files[0]);
+                  }}
+                  type="file"
+                  required
+                />
+              </Form.Group>
+
+              <Form.Group controlId="formFile" className="mb-3">
+                <Form.Label>Car Registration</Form.Label>
                 <Form.Control type="file" required />
               </Form.Group>
               <Form.Group controlId="formFile" className="mb-3">
-                <Form.Label>Car Registration</Form.Label>
+                <Form.Label>Drivers License</Form.Label>
                 <Form.Control type="file" required />
               </Form.Group>
             </div>

@@ -29,19 +29,19 @@ const RideCard = (props) => {
           <Row className="text-center">
             <Col lg={4}>
               <img
-                height={"130px"}
+                className="location-img"
                 src="https://prod-lippincott.imgix.net/app/uploads/2020/01/02210649/Walmart1_Logo-scaled.jpg?auto=false%2Ccompress&q=90&w=1400"
                 alt="walmart"
               />
             </Col>
             <Col lg={8}>
               <Row className="mb-3">
-                <Col lg={6}>
+                <Col lg={6} className="ridecard-col">
                   <Button variant="dark">
                     <Calendar /> {date}
                   </Button>
                 </Col>
-                <Col lg={6}>
+                <Col lg={6} className="ridecard-col">
                   <Button variant="dark">
                     <ClockFill /> {time}
                   </Button>
@@ -60,12 +60,12 @@ const RideCard = (props) => {
                 </Col>
               </Row>
               <Row>
-                <Col>
+                <Col lg={6}>
                   <h5>
                     <PersonFillUp /> {seats} Seats
                   </h5>
                 </Col>
-                <Col>
+                <Col lg={6}>
                   <h5>
                     <CurrencyDollar /> {price}
                   </h5>

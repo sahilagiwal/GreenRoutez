@@ -1,0 +1,18 @@
+.fqa-head{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: large;
+}
+
+.fqa{
+    position: relative;
+    height: 50px;
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    padding-top: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}

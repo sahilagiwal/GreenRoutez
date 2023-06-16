@@ -15,7 +15,6 @@ const FAQS = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-;
 
 
         <b className="fqa-head">FAQ</b>

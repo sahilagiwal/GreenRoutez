@@ -26,7 +26,7 @@ const Navigation = (props) => (
             About Us
           </Link>
 
-          <Nav.Link href="#link">Faqs</Nav.Link>
+          <Nav.Link href="/faq">Faqs</Nav.Link>
           <Nav.Link href="#link">Contact Us</Nav.Link>
 
           <Link to="/rides" className="btn btn-dark">

@@ -24,7 +24,7 @@ const RideCard = (props) => {
       animate={{ opacity: 1, translatY: 0 }}
       transition={{ duration: 1.5, delay: i * 0.5 }}
     >
-      <Card className="mx-auto mb-5 shadow-lg" style={{ width: "60%" }}>
+      <Card className="mx-auto mb-5 shadow-lg" style={{ maxWidth: "80%" }}>
         <Card.Body>
           <Row className="text-center">
             <Col lg={4}>
